@@ -1,6 +1,10 @@
 spring:
+  sql:
+    init:
+      mode: always
+      schema-location: classpath:schema.sql
   datasource:
-    url: jdbc:h2:mem:task-db
+    url: jdbc:h2:mem:taskdb
     driverClassName: org.h2.Driver
     username: root
     password:
